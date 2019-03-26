@@ -67,3 +67,31 @@ header{
     margin-left: 10px;
     text-align: justify;
 }
+
+.article-table {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.article-table > thead {
+    background-color: #17a4a3;
+}
+
+thead tr td {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 50%;
+    border-bottom: 1px solid black;
+}
+
+.article-table > tbody {
+    background-color: white;
+}
+
+tbody tr td {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
