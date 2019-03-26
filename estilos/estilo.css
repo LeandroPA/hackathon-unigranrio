@@ -26,6 +26,11 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fab234;
 }
+.content-image {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 6px;
+}
 .content-wrapper{
     width: 60%;
     max-width: 1200px;
