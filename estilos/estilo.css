@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+body {
     background-color: #e5e5e5;
 }
-header{
+header {
     width: 100%;
     height: 200px;
     display: flex;
@@ -14,11 +14,11 @@ header{
     align-items: center;
     background-color: white;
 }
-#header-title{
+#header-title {
     color: #17a4a3;
     font-family: Arial, Helvetica, sans-serif;
 }
-#header-subtitle{
+#header-subtitle {
     width: 200px;
     text-align: center;
     color: white;
@@ -26,72 +26,118 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fab234;
 }
-.content-image {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 6px;
-}
-.content-wrapper{
+.content-wrapper {
     width: 60%;
     max-width: 1200px;
     margin: 0 auto;
 }
-.content-title{
+.content-title {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.content-text{
+.content-text {
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: justify;
 }
-
-.article-title{
+.content-image {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+.article-title {
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.article-text{
+.article-text {
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: justify;
 }
-.article-list{
+.article-list {
     margin-top: 10px;
 }
-.article-list-item{
+.article-list-item {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     margin-bottom: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
     text-align: justify;
 }
 
 .article-table {
     width: 100%;
     border: 1px solid black;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
 }
-
 .article-table > thead {
     background-color: #17a4a3;
 }
-
-thead tr td {
+.article-table thead tr td {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding: 5px 0;
+    text-align:center;
+    padding: 5px;
     width: 50%;
-    border-bottom: 1px solid black;
 }
-
 .article-table > tbody {
     background-color: white;
 }
-
-tbody tr td {
+.article-table > tbody tr:nth-child(2) {
+    background-color: #eee;
+}
+.article-table > tbody tr td {
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
+    text-align:center;
+    border-top: 1px solid black;
+}
+
+.calendario-etapa-linha-um {
+    background-color: #A4C2F4
+}
+
+.calendario-etapa-linha-dois {
+    background-color: #FFD966
+}
+
+.calendario-etapa-linha-tres {
+    background-color: #93C47D
+}
+
+.calendario-linha-um > td:not(.calendario-etapa-linha-um) {
+    background-color: #C9DAF8
+}
+
+.calendario-linha-dois > td:not(.calendario-etapa-linha-dois) {
+    background-color: #E1E599
+}
+
+.calendario-linha-tres > td:not(.calendario-etapa-linha-tres) {
+    background-color: #B6D7A8
+}
+
+.slide-imagem {
+    max-width:100%;
+    max-height: 100%;
+    display: none;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
