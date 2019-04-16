@@ -12,7 +12,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #white;
 }
 #header-title {
     color: #17a4a3;
@@ -114,17 +114,39 @@ header {
 .calendario-linha-tres > td:not(.calendario-etapa-linha-tres) {
     background-color: #B6D7A8
 }
+.slide-legenda-holder {    
+  opacity: 0.5;
+  background-color: #898989;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0px;
+}
+
+#slide-legenda {
+    
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0 10px 0;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background:rgba(137, 137, 137, 0.8);
+  border-radius: 0 0 4px 4px;
+}
 
 .slide-holder {
-    height: 400px;
+    height: 400px;    
+    position: relative;
 }
 
 .slide-imagem {
     width: 100%;
     height: 100%;
     margin-top: 15px;
-    border-radius: 4px;
     display: none;
+    border-radius: 4px;
 }
 .fade {
     -webkit-animation-name: fade;
