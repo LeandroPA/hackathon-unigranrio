@@ -12,7 +12,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #white;
+    background-color: white;
 }
 #header-title {
     color: #17a4a3;
